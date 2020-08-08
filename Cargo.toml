@@ -1,0 +1,10 @@
+[package]
+name = "rust-live-md"
+version = "0.1.0"
+authors = ["codermarcos <coder.marcos@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+websocket = "0.26.2"
+pulldown-cmark = "0.7.2"
+gh-emoji = "1.0.3"
