@@ -594,10 +594,6 @@
 
 			const ln = 92;
 
-			input.onkeyup = e => {
-				refresh();
-				ws.send(text);
-			}
 
 			function refresh() {
 				let text = input.value;
@@ -614,11 +610,16 @@
 				}
 
 				formated.append(...codes);
+
+				ws.send(text);
 			}
+
+			input.onkeyup = e => refresh();
 
 			input.value = 
 				'# Teste do titulo\n' +
 				'Meu nome é Marcos eu consigo add emoji :poop:\n' +
+				'> Testando blockquote\n' +
 				'* Isso vai ser uma lista\n' +
 				'* Isso é uma prop em **negrito**\n' +
 				'* Isso é uma prop em *italico*\n' +

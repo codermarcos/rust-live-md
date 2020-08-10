@@ -37,6 +37,7 @@ fn main() {
             let initial = parser(
                 "# Teste do titulo\n\
                 Meu nome é Marcos eu consigo add emoji :poop:\n\
+                > Testando blockquote\n\
                 * Isso vai ser uma lista\n\
                 * Isso é uma prop em **negrito**\n\
                 * Isso é uma prop em *italico*\n\
